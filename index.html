@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <title>Irina Blagoveschik</title>
+</head>
+
+<body>
+<div class="wrapper">
+
+
+    <div class="header">
+
+
+        <div class="header__title">
+            <h1>Irina Blagoveschik</h1>
+            <h2>Frontend Developer</h2>
+        </div>
+        <div class="header__img">
+	<img src="https://media-exp1.licdn.com/dms/image/C4E03AQGutCMP96lqXw/profile-displayphoto-shrink_800_800/0/1622056518987?e=1637798400&v=beta&t=CkndftLAhGOtNZjOSL_2eX44PfnlAZpm9yFwBPoB_NQ"
+             alt="My photo" class="header__img__myphoto"/>
+	</div>	
+    </div>
+
+    <div class="main_wrap">
+    <div class="main">
+        <div class="main__section">
+            <div class="main__section__title">
+                <h3>About Myself</h3>
+            </div>
+            <div class="main__section__cont main__section__cont_aboutm">
+                <p>After being a tutor of English for 6 years I faced the lack of opportunities for professional growth.
+                    I decided to get knowledge in IT. As I didn't have any related skills I finished the course of
+                    manual testing. By chance, I entered the LeverX Intro Course where I had my first experience in
+                    learning programming language (JavaScript) and successfully completed it. I became passionate about
+                    Frontend Development. Currently I continue getting skills that are "must have" to become a
+                    professional developer.</p>
+            </div>
+        </div>
+
+        <div class="main__section">
+            <div class="main__section__title">
+                <h3>Skills</h3>
+            </div>
+            <div class="main__section__cont main__section__cont_skills">
+                <ul>
+                    <li>HTML5, CSS3</li>
+                    <li>JavaScript (Basics)</li>
+                    <li>Git</li>
+                    <li>SQL</li>
+                    <li>Jira, Confluence</li>
+                </ul>
+            </div>
+        </div>
+        <div class="main__section">
+            <div class="main__section__title">
+                <h3>Code Example</h3>
+            </div>
+            <div class="main__section__cont main__section__cont_code">
+                <p><i>A piece of code that validates the chosen answers in application</i> <b>Test</b></p>
+                <pre><code>
+var re = /^[1-4]{1}(,[1-4]{1})*$/;
+
+var isCorrectAnswerValid = re.test(correctAnswer);
+
+//check if entered answer numbers are unique
+if (isCorrectAnswerValid) {
+    var arrCorrectAnswers = correctAnswer.split(",").map(function (index) {
+        return index - 1;
+    });
+    var uniqueArrCorrectAnswers = arrCorrectAnswers.filter((element, index, arr) => {
+        return (arr.indexOf(element) == index);
+    });
+    isCorrectAnswerValid = uniqueArrCorrectAnswers.length == arrCorrectAnswers.length;
+}
+
+if (!isCorrectAnswerValid) {
+    showNotification("Поле может содержать только уникальные цифры 1,2,3,4, разделенные запятой. Попробуйте добавить вопрос заново.");
+    return;
+}
+</code></pre>
+            </div>
+        </div>
+
+
+        <div class="main__section">
+            <div class="main__section__title">
+                <h3>Experience</h3>
+            </div>
+            <div class="main__section__cont main__section__cont_exper">
+                <p>LeverX Intro Course: <em>Application</em> <strong>Test</strong>. User can enter questions, answer
+                    options and the right answers. The test can be passed and then automatically checked.</p>
+            </div>
+        </div>
+        <div class="main__section">
+            <div class="main__section__title">
+                <h3>Education</h3>
+            </div>
+            <div class="main__section__cont main__section__cont_educat">
+                <ul>
+                    <li><strong>Courses:</strong>
+                        <ul>
+                            <li><a href="https://learnjavascript.online/"
+                                   rel="nofollow">https://learnjavascript.online/</a></li>
+                            <li><a href="https://learnprogramming.online/" rel="nofollow">https://learnprogramming.online/</a>
+                            </li>
+                            <li><a href="https://itvdn.com/ru/video/html5-css3-starter/" rel="nofollow">https://itvdn.com/ru/video/html5-css3-starter/</a>
+                            </li>
+                            <li>LeverX Intro Course</li>
+                        </ul>
+                    </li>
+                    <li><strong>State Institute of Management and Social Technologies of Belarusian State University:
+                        "LINGUA+"</strong> Language Interpretation and Translation
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="main__section">
+            <div class="main__section__title">
+                <h3>English Language</h3>
+            </div>
+            <div class="main__section__cont main__section__cont_englang">
+                <p>Advanced level, speak English fluently. Have 6 year experience of teaching English.</p>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="sidebar_wrap">
+    <div class="sidebar">
+        <div class="sidebar__section">
+
+            <div class="sidebar__section__title">
+                <h3>Contact Information</h3>
+            </div>
+            <div class="sidebar__section__cont sidebar__section__cont_contact">
+                <ul>
+                    <li><h3>Location</h3> Minsk, Belarus</li>
+                    <li><h3>Phone</h3> +375 29 343-90-07</li>
+                    <li><h3>Email</h3> <a href="mailto:irina.blagoveschik@gmail.com">irina.blagoveschik@gmail.com</a>
+                    </li>
+                    <li><h3>Profile</h3> <a href="https://www.linkedin.com/in/irina-blagoveschik-23a088207/" rel="nofollow">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+    <div style="clear:both"></div>
+    <div class="footer">
+        <div class="footer__year">2021</div>
+        <div class="footer__github">
+            <a target="_blank" href="https://github.com/1-rina"><i class="fab fa-github"></i>Me on GitHub</a>
+        </div>
+        <div class="footer__rsschool">
+            <a target="_blank" href="https://rs.school/js/"><img src="img/rs_school_js.svg" alt="RSSchool link"/></a>
+        </div>
+
+    </div>
+</div>
+</body>
+
+</html>
