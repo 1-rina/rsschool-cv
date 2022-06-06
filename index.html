@@ -74,7 +74,7 @@ if (isCorrectAnswerValid) {
     var arrCorrectAnswers = correctAnswer.split(",").map(function (index) {
         return index - 1;
     });
-    var uniqueArrCorrectAnswers = arrCorrectAnswers.filter((element, index, arr) => {
+    var uniqueArrCorrectAnswers = arrCorrectAnswers.filter((element, index, arr) =&gt; {
         return (arr.indexOf(element) == index);
     });
     isCorrectAnswerValid = uniqueArrCorrectAnswers.length == arrCorrectAnswers.length;
